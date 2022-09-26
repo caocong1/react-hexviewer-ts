@@ -2,6 +2,8 @@ import React, { FC, ReactNode, useEffect, useState } from "react";
 import { Hex } from "./hex";
 
 export interface HexViewerProps {
+  /** start row */
+  startRow?: number;
   /** number of bytes per row */
   rowLength?: number;
   /** number of bytes between a visible split */
@@ -20,6 +22,7 @@ export interface HexViewerProps {
 
 export const HexViewer: FC<HexViewerProps> = (props) => {
   const {
+    startRow = 0,
     rowLength = 16,
     setLength = 4,
     children,
@@ -85,7 +88,7 @@ export const HexViewer: FC<HexViewerProps> = (props) => {
     <>
       {isErrorData && (errorData || <div>Error Data</div>)}
       {!rows.length && !isErrorData && (noData || <div>No Data</div>)}
-      {!!rows.length && !isErrorData && <Hex rows={rows} bytesper={rowLength} />}
+      {!!rows.length && !isErrorData && <Hex startRow={startRow} rows={rows} bytesper={rowLength} />}
     </>
   );
 };

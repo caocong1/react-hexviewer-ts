@@ -1,5 +1,5 @@
 {
-  "name": "react-hexviewer-ts",
+  "name": "@caocong/react-hexviewer-ts",
   "version": "0.1.8",
   "scripts": {
     "start": "craco start",
@@ -13,10 +13,10 @@
     "chromatic": "npx chromatic --project-token=329affb5b264"
   },
   "license": "MIT",
-  "homepage": "https://github.com/KondakovArtem/react-hexviewer-ts",
+  "homepage": "https://github.com/caocong1/react-hexviewer-ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/KondakovArtem/react-hexviewer-ts.git"
+    "url": "git+https://github.com/caocong1/react-hexviewer-ts.git"
   },
   "keywords": [
     "react",
@@ -27,7 +27,7 @@
   ],
   "author": "Kondakov Artem <kondakov.artem@gmail.com>",
   "bugs": {
-    "url": "https://github.com/KondakovArtem/react-hexviewer-ts/issues"
+    "url": "https://github.com/caocong1/react-hexviewer-ts/issues"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
@@ -91,5 +91,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "React Hex Viewer Ts ================"
 }
