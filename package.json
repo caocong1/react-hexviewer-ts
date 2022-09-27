@@ -1,6 +1,6 @@
 {
   "name": "@caocong/react-hexviewer-ts",
-  "version": "0.1.8",
+  "version": "0.1.10",
   "scripts": {
     "start": "craco start",
     "build": "gulp build",
